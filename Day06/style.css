@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1rem;
+  background-color: #f7f9fb;
+  color: #1f2e3a;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #d3dee6;
+}
+
+.logo { font-weight: bold; color: #0b6fb8; }
+.menu { display: flex; gap: 1rem; list-style: none; }
+.menu a { color: #1b3f5e; text-decoration: none; }
+/* 소개 영역 : 모바일은 사진 위·글 아래 */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.profile {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.lead { color: #5f7280; }
+
+/* 태블릿 폭부터는 사진과 글을 나란히 */
+@media (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* 다크 모드 */
+@media (prefers-color-scheme: dark) {
+  body { background-color: #12222f; color: #e8eff4; }
+  .nav { background-color: #1b3f5e; border-color: #2c556f; }
+  .menu a, .lead { color: #e8eff4; }
+}
