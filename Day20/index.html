@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAY 20 — 비동기 프로그래밍 심화와 브라우저 저장소</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- 혼자 도는 짧은 예제(8 · 9 · 36 · 38 · 40 · 41 · 42 · 44 · 46장)를 index.js에 따라 칩니다 — 결과는 대부분 Console에 찍힙니다 -->
+
+    <!-- 04 — 36장 사라지는 값 : 누를 때마다 1씩 늘고, 새로고침하면 0번으로 -->
+    <h1>누른 횟수</h1>
+    <p id="count" class="status">0번</p>
+    <button id="add-btn" type="button">+1</button>
+
+    <!-- 04 — 44장 연 횟수 : 열 때마다 두 저장소의 visits를 1씩 늘려 보여 줌 -->
+    <h1>연 횟수</h1>
+    <p class="status">이 탭에서 (sessionStorage) <span id="tab-count">0</span>번</p>
+    <p class="status">이 브라우저에서 (localStorage) <span id="all-count">0</span>번</p>
+  </main>
+
+  <!-- 장표의 예제는 index.js에 따라 칩니다 -->
+  <script src="index.js"></script>
+</body>
+</html>

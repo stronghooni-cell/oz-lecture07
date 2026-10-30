@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습 02 — 새로고침해도 남는 할 일</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>오늘의 할 일</h1>
+    <form id="todo-form" class="todo-form">
+      <input id="todo-input" type="text" maxlength="20" placeholder="할 일을 입력하고 Enter">
+      <button type="submit">추가</button>
+    </form>
+    <p id="todo-msg" class="msg"></p>
+    <ul id="todo-list" class="todo-list"></ul>
+    <p id="todo-count" class="count"></p>
+  </main>
+
+  <script src="todo.js"></script>
+</body>
+</html>

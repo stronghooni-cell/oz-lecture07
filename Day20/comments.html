@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습 01 — 댓글 보기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>댓글 보기</h1>
+    <form id="search-form" class="search">
+      <label for="post-id">글 번호</label>
+      <input id="post-id" type="number" min="1" value="1" required>
+      <button id="load-btn" type="submit">댓글 보기</button>
+    </form>
+    <p id="status" class="status"></p>
+    <button id="retry-btn" type="button" hidden>다시 시도</button>
+    <ul id="list" class="comments"></ul>
+  </main>
+
+  <script src="comments.js"></script>
+</body>
+</html>
