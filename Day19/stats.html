@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습 02 — 한 주 운동 기록</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>한 주 운동 기록</h1>
+    <section class="stats">
+      <p class="label">총 운동 시간</p>
+      <p id="total" class="value"></p>
+      <p class="label">하루 평균</p>
+      <p id="average" class="value"></p>
+      <p class="label">가장 오래 한 날</p>
+      <p id="best" class="value"></p>
+      <p class="label">30분 이상 한 날</p>
+      <ul id="long-days" class="chips"></ul>
+      <p class="label">종류별 시간</p>
+      <ul id="by-type" class="type-list"></ul>
+    </section>
+  </main>
+
+  <script src="stats.js"></script>
+</body>
+</html>

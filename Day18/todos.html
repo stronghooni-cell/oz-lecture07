@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습 02 — 할 일 모아 보기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>할 일 모아 보기</h1>
+    <div class="toolbar">
+      <select id="user">
+        <option value="1">1번 회원</option>
+        <option value="2">2번 회원</option>
+        <option value="3">3번 회원</option>
+      </select>
+      <button id="all-btn" type="button">전체</button>
+      <button id="done-btn" type="button">끝낸 일</button>
+      <button id="left-btn" type="button">남은 일</button>
+    </div>
+    <p id="status" class="msg"></p>
+    <p id="count" class="count"></p>
+    <ol id="todo-list" class="todo-list"></ol>
+  </main>
+
+  <script src="todos.js"></script>
+</body>
+</html>

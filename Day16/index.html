@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAY 16 — 이벤트 처리와 폼 제어</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- 01 — 이벤트 연결 (10 · 11 · 13 · 14장) -->
+    <p class="hint">01 이벤트 연결 — 10 · 11장은 첫 단추(#count-btn), 13 · 19장은 둘째 단추(#btn), 14장은 메뉴 단추</p>
+    <p id="count">0번 눌렀습니다</p>
+    <button id="count-btn" type="button">눌러 보기</button>
+    <button id="btn" type="button">눌러 보기</button>
+    <p>
+      <button class="menu-btn" type="button">소금빵</button>
+      <button class="menu-btn" type="button">크루아상</button>
+      <button class="menu-btn" type="button">바게트</button>
+    </p>
+    <p id="picked">아직 고르지 않았습니다</p>
+
+    <!-- 02 — 주요 이벤트 (18 · 20 · 21장) -->
+    <p class="hint">02 주요 이벤트 — 18장 이름 · 20장 컵 크기와 샷 추가 · 21장 메모</p>
+    <!-- form으로 감싸지 않음 — 입력칸에서 Enter를 쳐도 제출되지 않게 -->
+    <p><label for="name">이름</label> <input id="name" type="text"></p>
+    <p>
+      <label for="size">컵 크기</label>
+      <select id="size">
+        <option value="톨">톨</option>
+        <option value="그란데">그란데</option>
+        <option value="벤티">벤티</option>
+      </select>
+      <label class="agree"><input id="shot" type="checkbox"> 샷 추가</label>
+    </p>
+    <p id="order" class="msg ok"></p>
+    <p><label for="memo">메모</label> <input id="memo" type="text"></p>
+
+    <!-- 03 — 폼 제어 (24 · 25 · 26 · 27 · 28장) -->
+    <p class="hint">03 폼 제어 — 24 · 25 · 27 · 28장은 할 일 폼, 26장은 나이</p>
+    <h1>할 일 추가</h1>
+    <form id="todo-form" class="todo-form">
+      <input id="todo-input" name="todo" type="text">
+      <button type="submit">추가</button>
+    </form>
+    <p id="msg" class="msg"></p>
+    <p id="where"></p>
+    <label for="age">나이</label>
+    <input id="age" type="number">
+
+    <!-- 04 — Todo List · 디버깅 (34 · 40장) -->
+    <p class="hint">04 Todo List · 디버깅 — 34장은 위 할 일 폼으로 이 목록에, 40장은 아래 추가 단추(#add-btn)</p>
+    <ul id="todo-list" class="todo-list"></ul>
+    <button id="add-btn" type="button">추가</button>
+  </main>
+
+  <!-- 장표의 예제는 index.js에 따라 칩니다 -->
+  <script src="index.js"></script>
+</body>
+</html>

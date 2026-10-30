@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습 02 — 카페 주문 처리</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>오즈 카페 주문</h1>
+    <form id="order-form" class="order-form">
+      <select id="menu">
+        <option value="아메리카노">아메리카노</option>
+        <option value="카페라테">카페라테</option>
+        <option value="바닐라라테">바닐라라테</option>
+      </select>
+      <button type="submit">주문하기</button>
+    </form>
+    <ol id="log" class="log"></ol>
+  </main>
+
+  <script src="order.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* DAY 18 — 실습 01 · 02가 함께 쓰는 스타일 */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 32px 24px;
+  font-family: system-ui, sans-serif;
+  color: #1f2e3a;
+  background: #f0f4f8;
+}
+main {
+  max-width: 520px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 0 0 16px;
+  font-size: 26px;
+}
+button {
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #0b6fb8;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+button:disabled {
+  background: #9fb3c3;
+  cursor: default;
+}
+select {
+  padding: 8px 10px;
+  border: 1px solid #b8c7d3;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.msg {
+  min-height: 20px;
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: #1e7a3c;
+}
+.msg.error {
+  color: #c4553c;
+}
+
+/* 실습 01 — 회원 목록 */
+.member-list {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+/* 실습 02 — 할 일 모아 보기 */
+.toolbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.todo-list {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+.todo-list .done {
+  color: #8a9aa8;
+  text-decoration: line-through;
+}
+.count {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #5f7280;
+}

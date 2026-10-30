@@ -1,0 +1,94 @@
+/* DAY 16 — 실습 01 · 02가 함께 쓰는 스타일 */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 32px 24px;
+  font-family: system-ui, sans-serif;
+  color: #1f2e3a;
+  background: #f0f4f8;
+}
+main {
+  max-width: 480px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 0 0 16px;
+  font-size: 26px;
+}
+form {
+  display: grid;
+  gap: 8px;
+}
+label {
+  font-weight: bold;
+}
+input[type="text"],
+input[type="number"] {
+  padding: 8px 10px;
+  border: 1px solid #b8c7d3;
+  border-radius: 6px;
+  font-size: 15px;
+}
+button {
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #0b6fb8;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.hint {
+  margin: 0;
+  color: #5f7280;
+  font-size: 13px;
+}
+.agree {
+  font-weight: normal;
+}
+
+/* 안내 문구 — 오류는 빨강, 완료는 초록 */
+.msg {
+  min-height: 20px;
+  margin: 12px 0 0;
+  font-size: 14px;
+}
+.msg.error {
+  color: #c4553c;
+}
+.msg.ok {
+  color: #1e7a3c;
+}
+
+/* 실습 02 — Todo List */
+.todo-form {
+  grid-template-columns: 1fr auto;
+}
+.todo-list {
+  margin: 16px 0 8px;
+  padding: 0;
+  list-style: none;
+}
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.todo-list li span {
+  cursor: pointer;
+}
+.todo-list li.done span {
+  color: #9aa7b1;
+  text-decoration: line-through;
+}
+.todo-list li button {
+  padding: 4px 10px;
+  background: #c4553c;
+  font-size: 12px;
+}

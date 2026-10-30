@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습 01 — 모임 신청 폼 검증하기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>오즈 북클럽 신청</h1>
+    <form id="join-form">
+      <label for="name">이름</label>
+      <input id="name" name="name" type="text" maxlength="10" placeholder="10자 이내">
+      <p id="name-count" class="hint">0 / 10자</p>
+
+      <label for="people">인원</label>
+      <input id="people" name="people" type="number" value="1">
+
+      <label class="agree"><input id="agree" type="checkbox"> 안내 문자를 받는 데 동의합니다</label>
+
+      <button type="submit">신청하기</button>
+    </form>
+    <p id="message" class="msg"></p>
+  </main>
+
+  <script src="join.js"></script>
+</body>
+</html>

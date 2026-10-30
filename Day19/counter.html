@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습 01 — 입장 인원 세기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>입장 인원 세기</h1>
+
+    <section class="hall">
+      <h2>1관 <span class="limit">정원 5명</span></h2>
+      <p id="a-count" class="people"></p>
+      <div class="buttons">
+        <button id="a-plus" type="button">입장 +1</button>
+        <button id="a-minus" type="button">퇴장 -1</button>
+        <button id="a-reset" type="button">처음으로</button>
+      </div>
+      <p id="a-msg" class="msg"></p>
+    </section>
+
+    <section class="hall">
+      <h2>2관 <span class="limit">정원 3명</span></h2>
+      <p id="b-count" class="people"></p>
+      <div class="buttons">
+        <button id="b-plus" type="button">입장 +1</button>
+        <button id="b-minus" type="button">퇴장 -1</button>
+        <button id="b-reset" type="button">처음으로</button>
+      </div>
+      <p id="b-msg" class="msg"></p>
+    </section>
+  </main>
+
+  <script src="counter.js"></script>
+</body>
+</html>

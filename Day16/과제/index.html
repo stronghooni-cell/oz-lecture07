@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>물 마시기 기록</title>
+  <style>
+    body {
+      padding: 24px;
+      font-family: system-ui, sans-serif;
+    }
+    .done {
+      color: #1e7a3c;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>오늘 물 마시기</h1>
+  <label for="goal">목표</label>
+  <select id="goal">
+    <option value="6">6잔</option>
+    <option value="8" selected>8잔</option>
+    <option value="10">10잔</option>
+  </select>
+  <p id="status">0잔 / 목표 8잔</p>
+  <button id="plus-btn" type="button">한 잔 마셨어요</button>
+  <button id="reset-btn" type="button">처음부터</button>
+
+  <script src="water.js"></script>
+</body>
+</html>
