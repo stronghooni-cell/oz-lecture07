@@ -1,0 +1,67 @@
+/* DAY 21 — 실습 01 댓글 보기 (DAY 20 실습 01과 같은 화면) */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 32px 24px;
+  font-family: system-ui, sans-serif;
+  color: #1f2e3a;
+  background: #f0f4f8;
+}
+main {
+  max-width: 520px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 0 0 16px;
+  font-size: 26px;
+}
+button {
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #0b6fb8;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+button:disabled {
+  background: #9fb3c3;
+  cursor: default;
+}
+input {
+  padding: 8px 10px;
+  border: 1px solid #b8c7d3;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.search {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.search input {
+  width: 90px;
+}
+.status {
+  min-height: 22px;
+  margin: 14px 0 8px;
+  font-weight: bold;
+  color: #0b6fb8;
+}
+.status.error {
+  color: #c4553c;
+}
+.comments {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.comments li {
+  margin-bottom: 6px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 14px;
+}

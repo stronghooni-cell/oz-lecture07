@@ -1,0 +1,81 @@
+/* DAY 21 — 실습 02 할 일 (DAY 20 실습 02와 같은 화면에 날짜를 더함) */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 32px 24px;
+  font-family: system-ui, sans-serif;
+  color: #1f2e3a;
+  background: #f0f4f8;
+}
+main {
+  max-width: 520px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 0 0 16px;
+  font-size: 26px;
+}
+button {
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #0b6fb8;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+input {
+  padding: 8px 10px;
+  border: 1px solid #b8c7d3;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.todo-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+.msg {
+  min-height: 20px;
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #c4553c;
+}
+.todo-list {
+  margin: 8px 0;
+  padding: 0;
+  list-style: none;
+}
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+.todo-list li span {
+  flex: 1;
+  cursor: pointer;
+}
+.todo-list li small {
+  font-size: 12px;
+  color: #5f7280;
+}
+.todo-list li.done span {
+  color: #9aa7b1;
+  text-decoration: line-through;
+}
+.todo-list li button {
+  padding: 4px 10px;
+  background: #c4553c;
+  font-size: 12px;
+}
+.count {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #5f7280;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>읽은 글 표시하기</title>
+  <style>
+    body {
+      padding: 24px;
+      font-family: system-ui, sans-serif;
+    }
+    #list li {
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+    #list li.read {
+      color: #9aa7b1;
+    }
+    #list li.read::after {
+      content: " (읽음)";
+    }
+  </style>
+</head>
+<body>
+  <h1>오늘 읽을 글</h1>
+  <p id="status"></p>
+  <button id="retry-btn" type="button" hidden>다시 시도</button>
+  <ul id="list"></ul>
+  <button id="reset-btn" type="button">읽음 표시 모두 지우기</button>
+
+  <script src="posts.js"></script>
+</body>
+</html>
